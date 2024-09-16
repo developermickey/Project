@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const userSchema = mongooseSchema({
+const userSchema = mongoose.Schema({
   fullname: String,
   email: String,
   password: String,
@@ -8,7 +8,6 @@ const userSchema = mongooseSchema({
     type: Array,
     default: [],
   },
-  isadmin: Boolean,
   orders: {
     type: Array,
     default: [],
